@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Mi primer id-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>TechShop 2020</title>
+        <meta charset="UTF-8"/>
+
+    </head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+
+
+        <section th:replace="~{arbol/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{arbol/fragmentos :: agregarArbol}"/>
+        <section th:replace="~{arbol/fragmentos :: listadoArbols}"/>
+
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/category/MONITORES.jpg" class="d-block w-100" alt="..." width="1000" height="300">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cnnespanol.cnn.com/wp-content/uploads/2022/04/teclado-mecanico.jpg" class="d-block w-100" alt="..." width="1000" height="300">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.monumental.co.cr/wp-content/uploads/2022/03/X4J2Z6XQUZDO7O6QTDF4DIJ3VE.jpeg" class="d-block w-100" alt="..." width="1000" height="300">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+
+
+    </body>
+</html>
